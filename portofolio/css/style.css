@@ -1,0 +1,399 @@
+@import url(reset.css);
+@import url(mediaqueries.css);
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --fuenteprincipal: 'Montserrat', sans-serif;
+    --fuentetitulos: 'Abril Fatface', cursive;
+    --negro: #001333;
+    --azuloscuro: #13385B;
+    --azulmedio: #355388;
+    --azulclaro: #4F7FC7;
+    --blancoroto: #D5D9F5;
+    --marronoscuro: #AD5644;
+    --marronclaro: #F57359;
+    --margingrid: 1em;
+    --font-size: 1em;
+    --anchomaximo: 68.75em;
+}
+
+.container {
+    max-width: var(--anchomaximo);
+    margin: 0 auto;
+}
+
+body {
+    font-family: var(--fuenteprincipal);
+    font-size: var(--font-size);
+}
+
+
+
+/* --------- inicio header --------- */
+
+.nav-top {
+    padding: 1.25em 0px;
+}
+
+.nav-top .container {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+}
+
+.nav-top a {
+    color: var(--colorprincipal);
+    text-decoration: none;
+}
+
+nav li:hover {
+    background-color: var(--blancoroto);
+}
+
+.nav-top a i {
+    font-size: 150%;
+}
+
+.nav-top a i:hover {
+    color: var(--azulclaro);
+}
+
+.nav-top span {
+    color: white;
+    display: none;
+}
+
+.nav-top i:hover span {
+    color: white;
+    display: inline;
+}
+
+
+
+nav {
+    padding: 1.25em;
+}
+
+nav .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav .menu {
+    width: 100%;
+}
+
+nav .menu a:hover {
+    color: var(--azuloscuro);
+}
+
+nav figure {
+    max-width: 100px;
+}
+
+.menu a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    padding: 1.25em;
+    color: #aaa;
+    border-bottom: 1px solid #aaa;
+}
+
+.menu li:last-child a {
+    border-bottom: 0px;
+}
+
+
+/* --------- final header --------- */
+
+/* --------- inicio footer --------- */
+
+footer {
+    background-color: var(--azulmedio);
+    padding: 1.25em 0px;
+    text-align: center;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 110%;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--colorprincipal);
+}
+
+.flecha a {
+    display: block;
+    color: var(--colorprincipal);
+    font-size: 300%;
+    position: fixed;
+    bottom: 4.375rem;
+    right: 1.25rem;
+}
+
+/* --------- final footer --------- */
+
+/* --------- inicio del hero --------- */
+
+.hero {
+
+    width: 100%;
+    color: black;
+    text-align: center;
+}
+
+.hero figure {
+    margin: 20px;
+}
+
+.hero h1 {
+    font-family: var(--fuentetitulos);
+    font-size: 2.25em;
+}
+
+.hero h2 {
+    color: black;
+    font-size: 1.25em;
+    margin: var(--margingrid) 0;
+}
+
+.hero p {
+    font-size: 1.15em;
+}
+
+
+.hero .container>div {
+    margin: var(--margingrid) 0;
+}
+
+
+.hero .container {
+    padding: 0;
+}
+
+/* --------- final hero --------- */
+
+/* --------- inicio herramientas --------- */
+
+section {
+    padding: 0 var(--margingrid);
+}
+
+
+section h2 {
+    font-family: var(--fuentetitulos);
+    font-size: 2em;
+    text-align: center;
+}
+
+
+section .underline {
+    position: relative;
+    width: 6.25rem;
+    margin: 0 auto;
+}
+
+section .underline hr {
+    position: absolute;
+    width: 100%;
+    top: -2px;
+    border-color: var(--colorprincipal);
+}
+
+
+section:last-child {
+    margin-bottom: 3em;
+}
+
+#herramientas .grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2em 0;
+}
+
+#herramientas article {
+    padding: 1.5em 0;
+    padding-left: 2em;
+    width: 50%;
+}
+
+#herramientas article>div {
+    display: flex;
+}
+
+#herramientas article>div i {
+    color: var(--colorprincipal);
+    font-size: 140%;
+    padding: 0.5em;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+#herramientas ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#herramientas ul li {
+    display: flex;
+    margin-left: 5em;
+    width: 50%;
+}
+
+#herramientas ul li i {
+    font-size: 0.5em;
+    padding-top: 5px;
+}
+
+#herramientas ul li p {
+    margin-left: 1em;
+}
+
+#herramientas article h3 {
+    margin: var(--margingrid) 0;
+    font-size: 110%;
+    font-weight: 700;
+}
+
+section p {
+    color: #666;
+    line-height: 1.15em;
+}
+
+/* --------- fin herramientas ---------  */
+
+/* --------- inicio proyectos ---------  */
+
+#tituloproyectos {
+    background-color: var(--azuloscuro);
+    padding: 1.5em;
+    padding-bottom: 2em;
+}
+
+#tituloproyectos h2,
+#tituloproyectos hr {
+    color: white;
+}
+
+
+#proyectos {
+    background-color: white;
+    padding: 0 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#proyectos article {
+    margin-top: 2em;
+
+}
+
+#proyectos article:last-child {
+    padding-bottom: 2em;
+}
+
+#proyectos article h3 {
+    margin: var(--margingrid) 0;
+    font-size: 110%;
+    font-weight: 700;
+}
+
+#proyectos article h4 {
+    margin-bottom: 0.5em;
+    color: var(--negro);
+}
+
+#proyectos article img {
+    margin: 1em 0;
+    max-width: 45em;
+}
+
+#proyectos .boton {
+    background-color: #13385B;
+    display: inline-block;
+    padding: 1.15em 1.50em;
+    color: white;
+    text-decoration: none;
+    margin: 0 auto;
+    margin-bottom: 2em;
+}
+
+#proyectos .boton i {
+    margin-left: 0.5em;
+}
+
+#proyectos .boton:hover i {
+    transition: transform 0.5s;
+    transform: translateX(5px);
+}
+
+
+
+/*  --------- fin proyectos ---------  */
+
+/*  --------- inicio contacto ---------  */
+
+
+#contacto {
+    background-color: var(--blancoroto);
+    padding: 3em;
+}
+
+#contacto .grid {
+    margin-top: 2em;
+}
+
+#contacto .grid .contactos {
+    display: flex;
+    justify-content: center;
+}
+
+#contacto .grid .contactos div {
+    margin: 1.5em 2em;
+    margin-bottom: 2em;
+    background-color: var(--azulmedio);
+}
+
+#contacto .boton {
+    display: inline-block;
+    padding: 1.15em 1.50em;
+    color: white;
+    text-decoration: none;
+}
+
+#contacto .boton i {
+    margin-left: 0.5em;
+}
+
+#contacto .boton:hover i {
+    transition: transform 0.5s;
+    transform: translateX(5px);
+}
+
+/* --------- fin contacto ------------ */

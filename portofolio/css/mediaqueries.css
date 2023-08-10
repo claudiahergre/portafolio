@@ -1,0 +1,126 @@
+/* --------- inicio mediqueries --------- */
+
+@media(min-width: 48em) {
+    header .nav-top a i {
+        font-size: 150%;
+    }
+
+
+    /* herramientas */
+
+
+    #herramientas .grid {
+        justify-content: center;
+    }
+
+    #herramientas article {
+        max-width: 40%;
+    }
+
+
+    /* fin herramientas */
+
+
+    /* proyectos */
+
+    #proyectos article {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #proyectos article figure {
+        margin: 1em 0;
+        max-width: 45em;
+    }
+
+    #proyectos article figure img {
+        width: 100%;
+    }
+
+    /* fin proyectos */
+
+}
+
+@media(min-width: 62.75em) {
+    nav .menu {
+        width: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav .menu li {
+        display: inline-block;
+        margin: 0 3em;
+    }
+
+    nav .menu a {
+        padding: 0.5em 1.25em;
+        border-bottom: 0px;
+    }
+
+    /* hero */
+
+    .hero {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0;
+    }
+
+    .hero figure img {
+        max-height: 34.375em;
+        width: auto;
+    }
+
+    .hero .container h1 {
+        font-size: 400%;
+    }
+
+    .hero .container h2 {
+        font-size: 200%;
+    }
+
+
+    /* fin hero */
+
+    /* herramientas */
+
+    #herramientas .grid {
+        justify-content: space-around;
+    }
+
+    main #herramientas article {
+        width: 25%;
+        margin: 1 em;
+        margin-bottom: 1.5em;
+        padding: 2em;
+    }
+
+    /* fin herramientas */
+
+    /* proyectos */
+
+    #proyectos .articulos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    #proyectos .articulos article {
+        width: 40%;
+    }
+
+    #proyectos .articulos article figure {
+        max-height: 360px;
+        overflow: hidden;
+    }
+
+    #proyectos div .boton {
+        margin-top: 2em;
+    }
+
+    /* fin proyectos */
+
+}
